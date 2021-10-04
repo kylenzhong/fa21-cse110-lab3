@@ -27,7 +27,7 @@
             <ul>
               <li><a href="#Agenda">Agenda</a></li>
               <li><a href="#NewBusiness">New Business</a></li>
-              <li><a href="#MISC">MISC</a></li>
+              <li><a href="#MISC">Donations</a></li>
             </ul>
         </nav>
 
@@ -35,6 +35,10 @@
         <h3>Attendence</h3>
             <p>Only <b>one</b> present is <strong>Kyle Zhong</strong>!</p>
         <h3 id="#Agenda">Agenda</h3>
+            <p>
+                The task for today is to go over what I need to do in order to launch my career path as both as software engineer and <br>
+                product manager.
+            </p>
         <h3>Previously</h3>
             <p>
                 I have just finished the final round of interview for Capital One, I should be getting notified on a decision by <br>
@@ -56,23 +60,12 @@
 
         <section>
         <!--  creates different section within the body, or any part of the page-->
-            <h3 id="#MISC">MISC</h3>
+            <h3 id="#MISC">Involuntary Donations</h3>
         </section>
 
 
         <br>
-        <form action="bankInfo" method="get" >
-    
-              <label for="name">Bank Information</label>
-              <input type="text" name="Account Number" id="name" required>
-      
-    
-              <label for="email">Enter your email: </label>
-              <input type="email" name="Password" id="email" required>
-        </form>
-        
-              <input type="submit" value="Rob!">
-    
+
               <fieldset>
                 <legend>Choose the amount you allow me to rob!</legend>
     
@@ -85,13 +78,37 @@
                 <input type="radio" id="1000" name="monster">
                 <label for="1000">$1000</label>
               </fieldset>
+
+              <br>
+              <label for="currencySelect">Choose a currency:</label>
+                <select name="currencies" id="currencySelect">
+                    <option value="">--Please choose an option--</option>
+                    <option value="USD">USD</option>
+                    <option value="Yen">Yen</option>
+                    <option value="Yuan">Yuan</option>
+                    <option value="Euro">Euro</option>
+                </select>
     
+                <form action="bankInfo" method="get" >
+    
+                    <label for="name">Bank Information</label>
+                    <input type="text" name="Account Number" id="name" required>
+            
+          
+                    <label for="email">Enter your email: </label>
+                    <input type="email" name="Password" id="email" required>
+              </form>
+              
+                    <input type="submit" value="Rob!">
+
+                <br>
+                <br>
               <label for="SSN">Social Security Number:</label>
     
                 <input type="text" id="SSN" name="SSN" required
                 minlength="9" maxlength="9" size="10">
     
-    
+                <br>
             
             <label for="story">Any other personal information you want me to know:</label>
                 <p>
@@ -141,15 +158,4 @@
         </footer>
             
     </body>
-
- 
-
-   
-
 </html>
-
-<!--  
-select
-option
-button
--->
