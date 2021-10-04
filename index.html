@@ -1,26 +1,27 @@
 <!--  -->
 
 <!DOCTYPE html>
-<html lang=”en”>
+<html>
     <head> <!--Includes meta data that would not be rendered as content of the page -->
         <title>ManySixtySeconds</title> <!-- Title that will be displayed at the top of the browser-->
         <meta charset="UTF-8"/>  <!-- setting the character set, UTF 8 covers most characters that would be used -->
     </head>
 
-    <header>
-    <!--This header is the introductory section of the page-->
-        <h1><em>Career Development</em> in <i>Product Management</i> Meeting Minutes</h1>
-        <!-- em is used as emphasis, and i is italics -->
-        <p>Explore ways to advance my PM career</p>
-        <h2>10/1/21</h2>
-    </header>
-
-    <hr>
-    <!-- Creates a line to seperate different sections of the page-->
-
-
     <body>
+
+        <header>
+            <!--This header is the introductory section of the page-->
+                <h1><em>Career Development</em> in <i>Product Management</i> Meeting Minutes</h1>
+                <!-- em is used as emphasis, and i is italics -->
+                <p>Explore ways to advance my PM career</p>
+                <h2>10/1/21</h2>
+            </header>
+        
+            <hr>
+            <!-- Creates a line to seperate different sections of the page-->
     <!-- Follows the header which will be the rest of the page-->
+
+
         <nav>
         <!-- navigational tools -->
             <ul>
@@ -46,9 +47,9 @@
         <!--  The most important part of the body-->
             <h3 id="#NewBusiness">New Business</h3>
             <ul>
-                <li>Lay out <span class ="action"></span>career path</span> with Capitla One's PDP</li>
+                <li>Lay out <span class ="action">career path</span> with Capitla One's PDP</li>
                 <li>Create <span class ="action">contingency plans</span>  for if offer is not extended</li>
-                <li>Create <span class ="action"></span>learning objectives</span>  for the following year</li>
+                <li>Create <span class ="action">learning objectives</span>  for the following year</li>
             </ul>
 
         </main>
@@ -59,64 +60,62 @@
         </section>
 
 
-
+        <br></br>
+        <form action="" method="get" >
+    
+              <label for="name">Bank Information</label>
+              <input type="text" name="Account Number" id="name" required>
+      
+    
+              <label for="email">Enter your email: </label>
+              <input type="email" name="Password" id="email" required>
+        </form>
+        
+              <input type="submit" value="Rob!">
+    
+              <fieldset>
+                <legend>Choose the amount you allow me to rob!</legend>
+    
+                <input type="radio" id="10" name="monster">
+                <label for="$10">$10</label><br/>
+            
+                <input type="radio" id="100" name="monster">
+                <label for="$100">$100</label><br/>
+            
+                <input type="radio" id="1000" name="monster">
+                <label for="$1000">$1000</label>
+              </fieldset>
+    
+              <label for="SSN">Social Security Number:</label>
+    
+                <input type="text" id="SSN" name="SSN" required
+                minlength="9" maxlength="9" size="10">
+    
+    
+                <p>
+                <label for="story">Any other personal information you want me to know:</label>
+                    <p>
+                    <textarea id="story" name="story"
+                            rows="5" cols="33">
+                        most embarrassing stories... 
+                    </textarea>
+                    </p>
+                </p>
+    
+    
+                <label for="ice-cream-choice">Favorite TV Show</label>
+                <input list="tvList" id="tvList" name="tvList" />
+    
+                <datalist id="tvList">
+                    <option value="Billions">
+                    <option value="Suits">
+                    <option value="Game of Thrones">
+                    <option value="Breaking Bad">
+                    <option value="Awake">
+                </datalist>    
     </body>
 
-    <br>
-    <form action="" method="get" >
-
-          <label for="name">Bank Information</label>
-          <input type="text" name="Account Number" id="name" required>
-  
-
-          <label for="email">Enter your email: </label>
-          <input type="email" name="Password" id="email" required>
-    </form>
-    
-          <input type="submit" value="Rob!">
-
-          <fieldset>
-            <legend>Choose the amount you allow me to rob!</legend>
-
-            <input type="radio" id="10" name="monster">
-            <label for="$10">$10</label><br/>
-        
-            <input type="radio" id="100" name="monster">
-            <label for="$100">$100</label><br/>
-        
-            <input type="radio" id="1000" name="monster">
-            <label for="$1000">$1000</label>
-          </fieldset>
-
-          <label for="SSN">Social Security Number:</label>
-
-            <input type="text" id="SSN" name="SSN" required
-            minlength="9" maxlength="9" size="10">
-
-
-            <p>
-            <label for="story">Any other personal information you want me to know:</label>
-                <p>
-                <textarea id="story" name="story"
-                        rows="5" cols="33">
-                    most embarrassing stories... 
-                </textarea>
-                </p>
-            </p>
-
-
-            <label for="ice-cream-choice">Favorite TV Show</label>
-            <input list="tvList" id="tvList" name="tvList" />
-
-            <datalist id="tvList">
-                <option value="Billions">
-                <option value="Suits">
-                <option value="Game of Thrones">
-                <option value="Breaking Bad">
-                <option value="Awake">
-            </datalist>
-    
-
+ 
 
     <footer>
     <!--  Follows the body of the page, and ends the page-->
