@@ -60,8 +60,8 @@
         </section>
 
 
-        <br></br>
-        <form action="" method="get" >
+        <br>
+        <form action="bankInfo" method="get" >
     
               <label for="name">Bank Information</label>
               <input type="text" name="Account Number" id="name" required>
@@ -93,20 +93,20 @@
     
     
                 <p>
-                <label for="story">Any other personal information you want me to know:</label>
-                    <p>
-                    <textarea id="story" name="story"
-                            rows="5" cols="33">
-                        most embarrassing stories... 
-                    </textarea>
-                    </p>
+                    <label for="story">Any other personal information you want me to know:</label>
+                        <p>
+                            <textarea id="story" name="story"
+                                    rows="5" cols="33">
+                                most embarrassing stories... 
+                            </textarea>
+                        </p>
                 </p>
     
     
                 <label for="ice-cream-choice">Favorite TV Show</label>
                 <input list="tvList" id="tvList" name="tvList" />
     
-                <datalist id="tvList">
+                <datalist id="tvListOptions">
                     <option value="Billions">
                     <option value="Suits">
                     <option value="Game of Thrones">
@@ -118,20 +118,10 @@
  
 
     <footer>
-    <!--  Follows the body of the page, and ends the page-->
-        <h3>Contact</h3>
-        Find me on <a href="linkedin.com/in/kylenzhong">Linkedin !
-        <details>
-            <summary>Fun Stuff</summary>
-            You can also search @kylenzhong on most platforms and be able to find me</details>
-
-        <hr>
-
-
         <div class = "specialFeatures">
             <!--  div does not change the content, only useful as a name tag for CSS's use-->
     
-            <img width = 350 src = "profile.jpg">
+            <img width = 350 src = "profile.jpg" alt="my professional look here">
             
             <video controls width="250">
                 <source src="skating.mp4" type="video/mp4">
@@ -140,6 +130,16 @@
 
             <audio controls src="skatingAudio.m4a"></audio>
         </div>
+
+        <hr>
+
+        <!--  Follows the body of the page, and ends the page-->
+        <h3>Contact</h3>
+        <details>
+            <summary>Fun Stuff</summary>
+            You can search @kylenzhong on most platforms and be able to find me</details>
+            Find me on <a href="linkedin.com/in/kylenzhong">Linkedin</a> !
+        
         
     </footer>
 
@@ -147,9 +147,6 @@
 </html>
 
 <!--  
-
-
-
 datalist
 select
 option
