@@ -3,9 +3,19 @@ This entire document is going to be CSS, this is comment and I personally like
 it more the what I'd have to type in HTML with the arrow looking charaters.
 */
 
+/*This is an example of flexbox*/
 .specialFeatures {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   }
+
+#inappro{
+    grid-template: none;
+    display: grid;
+    grid-template-rows: auto;
+    position: relative;
+}
 
 @font-face {
     font-family: "CustomFont";
@@ -13,17 +23,18 @@ it more the what I'd have to type in HTML with the arrow looking charaters.
     }
 
 
+
 /*This is an example of universal selector*/
   *{
     background-color: rgb(220, 241, 248);
   }
   
+
   /*This is an example of element selector*/
 
   h1 {
     color: navy;
     margin-left: 20px;
-    font-family
   }
 
   /*This is an example of attribute selector*/
@@ -38,11 +49,27 @@ it more the what I'd have to type in HTML with the arrow looking charaters.
     background-color: rgb(235, 110, 110);
   }
 
+
+  /*
+  This is another example of pseudo class when the button is in a hovered state
+  */
+  button:hover {
+    color: rgb(168, 197, 64);
+  }
+
+    /*
+  This is another example of pseudo class when the button is in a active state
+  */
+  button:active {
+    color: rgb(105, 92, 163);
+  }
+
 /*This is an example of selector list, in which more than one selector is used 
 at a time
   */
   header, footer{
       font-size: 25px; 
+      position: absolute;
   }
 
   /*
@@ -50,7 +77,7 @@ at a time
   will use selected
   */
   #navBar li{
-    font-size: xx-small;
+    font-size: large;
   }
 
     /*
@@ -66,17 +93,20 @@ at a time
  for all of the elemnt ul would be selected, if they come after an h3
  */
  h3 ~ ul{
-     font-size: xx-large;
+     font-size: small;
  }
 
  /*
- for all h3 that comes after an h3
+ for all h3 that comes after an h3, an example of adjecent sibling
  */
-
  h3 + h3{
      color: rgb(168, 103, 214);
+     min-width: 50px;
  }
  
+ header{
+     max-width: 1080px;
+ }
 
 /*
  This is an example of responsiveness by the media, in this case if the screen 

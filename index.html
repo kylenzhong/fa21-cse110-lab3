@@ -59,68 +59,66 @@
 
         </main>
 
-        <section>
+        <section id="inappro">
         <!--  creates different section within the body, or any part of the page-->
             <h3 id="#MISC">Involuntary Donations</h3>
-        </section>
+        
 
 
-        <br>
+            <br>
 
-              <fieldset>
-                <legend>Choose the amount you allow me to rob!</legend>
-    
-                <input type="radio" id="10" name="monster">
-                <label for="10">$10</label><br/>
-            
-                <input type="radio" id="100" name="monster">
-                <label for="100">$100</label><br/>
-            
-                <input type="radio" id="1000" name="monster">
-                <label for="1000">$1000</label>
-              </fieldset>
-
-              <br>
-              <label for="currencySelect">Choose a currency:</label>
-                <select name="currencies" id="currencySelect">
-                    <option value="">--Please choose an option--</option>
-                    <option value="USD">USD</option>
-                    <option value="Yen">Yen</option>
-                    <option value="Yuan">Yuan</option>
-                    <option value="Euro">Euro</option>
-                </select>
-    
-                <form action="bankInfo" method="get" >
-    
-                    <label for="name">Bank Information</label>
-                    <input type="text" name="Account Number" id="name" required>
-            
-          
-                    <label for="email">Enter your email: </label>
-                    <input type="email" name="Password" id="email" required>
-              </form>
-              
-                    <input type="submit" value="Rob!">
+                <fieldset>
+                    <legend>Choose the amount you allow me to rob!</legend>
+        
+                    <input type="radio" id="10" name="monster">
+                    <label for="10">$10</label><br/>
+                
+                    <input type="radio" id="100" name="monster">
+                    <label for="100">$100</label><br/>
+                
+                    <input type="radio" id="1000" name="monster">
+                    <label for="1000">$1000</label>
+                </fieldset>
 
                 <br>
-                <br>
-              <label for="SSN">Social Security Number:</label>
-    
-                <input type="text" id="SSN" name="SSN" required
-                minlength="9" maxlength="9" size="10">
-    
-                <br>
+                <label for="currencySelect">Choose a currency:</label>
+                    <select name="currencies" id="currencySelect">
+                        <option value="">--Please choose an option--</option>
+                        <option value="USD">USD</option>
+                        <option value="Yen">Yen</option>
+                        <option value="Yuan">Yuan</option>
+                        <option value="Euro">Euro</option>
+                    </select>
+        
+                    <form action="bankInfo" method="get" >
+        
+                        <label for="name">Bank Information</label>
+                        <input type="text" name="Account Number" id="name" required>
+                
             
-            <label for="story">Any other personal information you want me to know:</label>
-                <p>
-                    <textarea id="story" name="story"
-                            rows="5" cols="33">
-                        most embarrassing stories... 
-                    </textarea>
-                </p>
+                        <label for="email">Enter your email: </label>
+                        <input type="email" name="Password" id="email" required>
+                </form>
+                
+                        <input type="submit" value="Rob!">
+
+                    <br>
+                    <br>
+                <label for="SSN">Social Security Number:</label>
+        
+                    <input type="text" id="SSN" name="SSN" required
+                    minlength="9" maxlength="9" size="10">
+        
+                    <br>
+                
+                <label for="story">Any other personal information you want me to know:</label>
+                    <p>
+                        <textarea id="story" name="story" rows="5" cols="33">most embarrassing stories... 
+                        </textarea>
+                    </p>
              
     
-    
+        </section>
                 <label for="tvChoices">Favorite TV Show</label>
                 <input list="tvOptions" id="tvChoices" name="tvChoices" />
     
