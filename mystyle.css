@@ -1,0 +1,89 @@
+/*
+This entire document is going to be CSS, this is comment and I personally like
+it more the what I'd have to type in HTML with the arrow looking charaters.
+*/
+
+.specialFeatures {
+  display: flex;
+  }
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("fontKit/birthstone-regular-webfont.woff.woff") format("woff"),
+    }
+
+
+/*This is an example of universal selector*/
+  *{
+    background-color: rgb(220, 241, 248);
+  }
+  
+  /*This is an example of element selector*/
+
+  h1 {
+    color: navy;
+    margin-left: 20px;
+    font-family
+  }
+
+  /*This is an example of attribute selector*/
+  select[name="currencies"]{
+    font-size: x-large;
+  }
+  
+  /*This is an example of Pseudo class selector, others might include the different
+   state of an activity, like button being pressed, hovered, etc. 
+  */
+  :required{
+    background-color: rgb(235, 110, 110);
+  }
+
+/*This is an example of selector list, in which more than one selector is used 
+at a time
+  */
+  header, footer{
+      font-size: 25px; 
+  }
+
+  /*
+  THis is an example of descendant selector, only the list items from the navBar 
+  will use selected
+  */
+  #navBar li{
+    font-size: xx-small;
+  }
+
+    /*
+  This is an example of child combinator, in which the element is only selected if 
+  the element is a direct descendant of the parent specified. In this case, only
+  if div is a direct child of footor 
+  */
+ footer > div{
+     background-color: rgb(237, 250, 237);
+ }
+
+ /*
+ for all of the elemnt ul would be selected, if they come after an h3
+ */
+ h3 ~ ul{
+     font-size: xx-large;
+ }
+
+ /*
+ for all h3 that comes after an h3
+ */
+
+ h3 + h3{
+     color: rgb(168, 103, 214);
+ }
+ 
+
+/*
+ This is an example of responsiveness by the media, in this case if the screen 
+ width is smaller than 600px, it would change the background color
+ */
+ @media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(229, 240, 243);
+    }
+  }
