@@ -3,11 +3,25 @@ This entire document is going to be CSS, this is comment and I personally like
 it more the what I'd have to type in HTML with the arrow looking charaters.
 */
 
+header{
+    text-align: center;
+    border: 2pc solid rgb(196, 196, 241);
+    margin-top: 1px;
+    padding:top 1px;
+    border-radius: 1pt;
+    border-style: dotted;
+}
+
 /*This is an example of flexbox*/
 .specialFeatures {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  background-color: 240°, 67%, 94%;
+  margin: top;
+  padding-top: 1px;
+  border: 1pc white;
+  border-width: 1cm;
   }
 
 #inappro{
@@ -34,19 +48,21 @@ it more the what I'd have to type in HTML with the arrow looking charaters.
 
   h1 {
     color: navy;
-    margin-left: 20px;
+    margin-left: 1vw;
+    margin-top: 1vh;
   }
 
   /*This is an example of attribute selector*/
   select[name="currencies"]{
     font-size: x-large;
+    height: 50px;
   }
   
   /*This is an example of Pseudo class selector, others might include the different
    state of an activity, like button being pressed, hovered, etc. 
   */
   :required{
-    background-color: rgb(235, 110, 110);
+    background-color: rgb(151, 132, 132);
   }
 
 
@@ -69,8 +85,9 @@ at a time
   */
   header, footer{
       font-size: 25px; 
-      position: absolute;
+      
   }
+  
 
   /*
   THis is an example of descendant selector, only the list items from the navBar 
@@ -78,6 +95,7 @@ at a time
   */
   #navBar li{
     font-size: large;
+   
   }
 
     /*
@@ -86,7 +104,8 @@ at a time
   if div is a direct child of footor 
   */
  footer > div{
-     background-color: rgb(237, 250, 237);
+     background-color: 	hsl(219, 67%, 80%);
+     margin: auto;
  }
 
  /*
@@ -101,12 +120,14 @@ at a time
  */
  h3 + h3{
      color: rgb(168, 103, 214);
-     min-width: 50px;
+     width: 50pt;
+     height: 1rem;
  }
  
  header{
-     max-width: 1080px;
+     min-width: 1080px;
  }
+
 
 /*
  This is an example of responsiveness by the media, in this case if the screen 
@@ -114,6 +135,11 @@ at a time
  */
  @media only screen and (max-width: 600px) {
     body {
-      background-color: rgb(229, 240, 243);
+      background-color: E5F3FF;
     }
+  }
+
+  #summary{
+      position: static;
+      text-decoration: indigo;
   }
